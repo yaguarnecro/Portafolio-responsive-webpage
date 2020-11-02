@@ -89,6 +89,7 @@
             background: $portrait-image;
             border-radius: 50%;
             border: solid 3px $secondary-color;
+            transition-delay: 0.1s;
         }
     }
     .nav-item {
