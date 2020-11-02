@@ -1,0 +1,14 @@
+{
+    "name": "portafolio",
+    "version": "1.0.0",
+    "description": "Website responsive portafolio",
+    "main": "index.js",
+    "scripts": {
+        "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    },
+    "author": "Carlos Arturo Araque Montoya",
+    "license": "MIT",
+    "dependencies": {
+        "node-sass": "^5.0.0"
+    }
+}
