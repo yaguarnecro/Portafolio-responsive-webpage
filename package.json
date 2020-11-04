@@ -3,10 +3,10 @@
     "version": "1.0.0",
     "description": "Website responsive portafolio",
     "main": "index.js",
-    "homepage": "https://yaguarnecro.github.io/Portafolio-responsive-webpage",
+    "homepage": "https://yaguarnecro.github.io/portafolioresponsive",
     "scripts": {
         "sass": "node-sass -w scss/ -o dist/css/ --recursive",
-        "deploy": "gh-pages -d dist"
+        "deploy": "gh-pages -b master -d dist"
     },
     "author": "Carlos Arturo Araque Montoya",
     "license": "MIT",
