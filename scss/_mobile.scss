@@ -4,9 +4,6 @@
 //Desktops and laptops
 @include mediaLg {}
 
-//widescreens
-@include mediaXl {}
-
 //tablets and laptops
 @include mediaMd {
     main {
@@ -39,6 +36,10 @@
             width: 150px;
             height: 150px;
         }
+    }
+    .about-info {
+        grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+        grid-template-columns: 1fr;
     }
 }
 
