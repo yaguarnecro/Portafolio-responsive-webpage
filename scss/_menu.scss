@@ -63,7 +63,7 @@
     &-nav {
         margin: 0;
         padding: 0;
-        background-repeat: darken($primary-color, 5);
+        background: darken($primary-color, 5);
         list-style: none;
         //translate3d
         transform: translate3d(0, -100%, 0);
