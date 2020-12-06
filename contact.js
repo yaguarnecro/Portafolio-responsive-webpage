@@ -1,0 +1,37 @@
+// Define a new component called todo-item
+Vue.component('contact-item', {
+    template: ` 
+<div>
+    <main id="contact">
+    <h1 class="lg-heading">
+        <span class="text-secondary">¿</span>Como contactarme <span class="text-secondary"> ?</span>
+    </h1>
+    <h2 class="sm-heading text-secondary">
+        Sería genial si pudiéramos dialogar un poco...
+    </h2>
+    <div class="boxes">
+        <div>
+            <span class="text-secondary">Email: </span> yaguarnecro@gmail.com
+        </div>
+        <div>
+            <span class="text-secondary">Teléfono: </span>(+57) 300 438 5827
+        </div>
+        <div>
+            <span class="text-secondary">Dirección: </span>Crr 89A 31-4 (Med-Ant-Col)
+        </div>
+    </div>
+    </main>
+    <footer id="main-footer">Copyright &copy; 2020</footer>
+
+    <script src="js/main.js"></script>
+    
+</div>
+`
+
+
+});
+
+var app = new Vue({
+    el: '#contact',
+
+});
