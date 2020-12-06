@@ -1,4 +1,4 @@
-section {
+#main-section {
     display: flexbox;
     flex-direction: column;
     align-items: center;
