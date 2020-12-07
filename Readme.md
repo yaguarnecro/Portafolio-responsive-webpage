@@ -5,23 +5,26 @@
 It´s pretty simple, it is just a responsive website that will display images, links and descriptions.
 
 ![preview](https://files.readme.io/3fdf2b9-Captura_de_pantalla_2020-11-25_083718.png)
-        
 
 ## TEHC used:
-* HTML5
-* CSS3 - Transitions/Grid/Flex
-* Sass
-* NPM Package Manager
-* JavaScript
-* Git
+
+- HTML5
+- CSS3 - Transitions/Grid/Flex
+- Sass
+- NPM Package Manager
+- JavaScript
+- Git
+- Vue.js
 
 ## Files Included
+
 . index.html
 . main.css in css folder
 . Gruntfile.js
 . img folder
 . dist folder
 . package.json
+. some js files as modules.
 
 ## Authors and acknowledgment
 

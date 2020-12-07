@@ -8,6 +8,21 @@
     height: 100vh;
 }
 
+#about {
+    background: rgba(0, 0, 0, 0.068);
+    background-image: linear-gradient(120deg, #2a1e3af5 0%, #191141 100%);
+}
+
+#work {
+    background: rgba(0, 0, 0, 0.068);
+    background-image: linear-gradient(90deg, #271b3bf5 0%, #413b49f5 100%);
+}
+
+#contact {
+    background: rgba(0, 0, 0, 0.068);
+    background-image: linear-gradient(120deg, #271b3bf5 0%, #7b7683f5 100%);
+}
+
 nav-bar {
     color: #000;
 }
@@ -196,6 +211,7 @@ h3.lg-heading {
 h1.sm-heading,
 h2.sm-heading,
 h3.sm-heading {
+    display: inline-block;
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
     background-color: rgba(17, 1, 46, 0.5);
@@ -350,9 +366,10 @@ main#home h1 {
 }
 
 #main-footer {
+    display: inline-block;
     text-align: center;
     padding: 1rem;
-    background: black;
+    background: rgba(0, 0, 0, 0.212);
     color: #eefae3;
     height: 60px;
 }
