@@ -247,7 +247,7 @@ main .icons a {
 }
 
 main .icons a:hover {
-    color: #00ff4c;
+    color: rgb(0, 255, 0);
     transition: all 0.5s ease-out;
 }
 
@@ -264,36 +264,56 @@ main#home h1 {
     grid-gap: 30px;
     grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
     grid-template-columns: repeat(3, 1fr);
+    color: #cde9bc;
 }
 
 .about-info .bio-image {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
-    border: #00ff4c 3px solid;
+    border: #86e44d 1.5px solid;
+    box-shadow: 25px 15px 30px rgba(0, 0, 0, 0.07);
 }
 
 .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem;
+    color: #cde9bc;
 }
 
 .about-info .job {
     background: #120133;
     padding: 5.0rem;
-    border-bottom: #00ff4c 5px solid;
+    border-bottom: #073114 3px solid;
+    border-radius: 45px;
 }
 
 .about-info .job-1 {
     grid-area: job1;
+    padding: 0%;
 }
 
 .about-info .job-2 {
     grid-area: job2;
+    padding: 0%;
 }
 
 .about-info .job-3 {
     grid-area: job3;
+    padding: 0%;
+}
+
+.about-info .job .job-glass {
+    grid-area: auto;
+    position: relative;
+    left: 1vw;
+    top: 3vh;
+    background: linear-gradient(115.19deg, #ffffff80 6.22%, rgba(241, 241, 241, 0.603) 30.07%, rgba(189, 189, 189, 0.089) 62.19%, rgba(194, 194, 194, 0.0556114) 80.59%, rgba(206, 206, 206, 0.0151279) 92.9%, rgba(195, 195, 195, 0) 92.9%, rgba(211, 211, 211, 0) 92.9%, rgba(196, 196, 196, 0) 92.9%);
+    box-shadow: 25px 15px 30px rgba(0, 0, 0, 0.07);
+    backdrop-filter: blur(1px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 90px;
+    border-bottom: none;
 }
 
 .projects {
