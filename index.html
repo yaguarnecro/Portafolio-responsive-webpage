@@ -26,82 +26,83 @@
             </div>
             <ul class="menu-nav">
                 <li class="nav-item current">
-                    <a href="index.html" class="nav-link" data-link>Home</a>
+                    <a href="#home" class="nav-link" data-link>Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="about.html" class="nav-link" data-link>About me</a>
+                    <a href="#about" class="nav-link" data-link>About me</a>
                 </li>
                 <li class="nav-item">
-                    <a href="work.html" class="nav-link" data-link>Mis trabajos</a>
+                    <a href="#work" class="nav-link" data-link>Mis trabajos</a>
                 </li>
                 <li class="nav-item">
-                    <a href="contact.html" class="nav-link" data-link>Contacta me</a>
+                    <a href="#contact" class="nav-link" data-link>Contacta me</a>
                 </li>
             </ul>
         </nav>
     </header>
 
-
-    <section id="home">
-
-
-        <main id="home">
-            <h1 class="lg-heading">
-                Arturo Araque <span class="text-secondary">(CAAM)</span>
-            </h1>
-            <h2 class="sm-heading">
-                Desarrollador web, Programador & Diseñador
-            </h2>
-            <div class="icons">
-                <a href="#!">
-                    <i class="fab fa-linkedin fa-2x"></i>
-                </a>
-                <a href="#!">
-                    <i class="fab fa-github fa-2x"></i>
-                </a>
-                <a href="#!">
-                    <i class="fab fa-instagram fa-2x"></i>
-                </a>
-                <a href="#!">
-                    <i class="fab fa-facebook fa-2x"></i>
-                </a>
-            </div>
-            <!-- Principio del widget de globo de Calendly -->
-            <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-            <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
-            <script type="text/javascript">
-                Calendly.initBadgeWidget({
-                    url: 'https://calendly.com/yaguarnecro/15min?hide_gdpr_banner=1&background_color=261a57&text_color=554094&primary_color=abe9a3',
-                    text: 'Programe una reunión conmigo',
-                    color: '#26ff00',
-                    textColor: '#5b46ab',
-                    branding: true
-                });
-            </script>
-            <!-- Final del widget de globo de Calendly -->
-        </main>
-
-        <script src="js/main.js"></script>
+    <div class="container">
+        <section class="item-sec" id="home">
 
 
-    </section>
+            <main id="home">
+                <h1 class="lg-heading">
+                    Arturo Araque <span class="text-secondary">(CAAM)</span>
+                </h1>
+                <h2 class="sm-heading">
+                    Desarrollador web, Programador & Diseñador
+                </h2>
+                <div class="icons">
+                    <a href="#!">
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </a>
+                    <a href="#!">
+                        <i class="fab fa-github fa-2x"></i>
+                    </a>
+                    <a href="#!">
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </a>
+                    <a href="#!">
+                        <i class="fab fa-facebook fa-2x"></i>
+                    </a>
+                </div>
+                <!-- Principio del widget de globo de Calendly -->
+                <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+                <script type="text/javascript">
+                    Calendly.initBadgeWidget({
+                        url: 'https://calendly.com/yaguarnecro/15min?hide_gdpr_banner=1&background_color=261a57&text_color=554094&primary_color=abe9a3',
+                        text: 'Programe una reunión conmigo',
+                        color: '#26ff00',
+                        textColor: '#5b46ab',
+                        branding: true
+                    });
+                </script>
+                <!-- Final del widget de globo de Calendly -->
+            </main>
 
-    <section id="about">
-        <about-item></about-item>
-    </section>
-    <section id="work">
-        <work-item></work-item>
-    </section>
-    <section id="contact">
-        <contact-item></contact-item>
-    </section>
+            <script src="js/main.js"></script>
 
-    <script src="js/interactions.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-    <script src="about.js"></script>
-    <script src="work.js"></script>
-    <script src="contact.js"></script>
 
+        </section>
+
+        <section class="item-sec" id="about">
+            <about-item></about-item>
+        </section>
+        <section class="item-sec" id="work">
+            <work-item></work-item>
+        </section>
+        <section class="item-sec" id="contact">
+            <contact-item></contact-item>
+        </section>
+        <footer id="main-footer">Copyright &copy; 2020</footer>
+
+        <!-- <script src="js/interactions.js"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+        <script src="about.js"></script>
+        <script src="work.js"></script>
+        <script src="contact.js"></script>
+        </container>
 </body>
 
 </html>

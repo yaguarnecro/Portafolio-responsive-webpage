@@ -176,6 +176,14 @@ body {
     margin: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 1.5;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+section {
+    border-bottom: 10px #00ff4c solid;
+    height: 100vh;
+    scroll-snap-align: start;
 }
 
 body#bg-img {
@@ -236,6 +244,8 @@ header {
 main {
     padding: 4rem;
     min-height: calc(100vh - 60px);
+    height: 100vh;
+    overflow: hidden;
 }
 
 main .icons {
@@ -314,9 +324,11 @@ main#home h1 {
     /* Note: backdrop-filter has minimal browser support */
     border-radius: 90px;
     border-bottom: none;
+    padding: grid;
 }
 
 .projects {
+    height: auto;
     display: grid;
     grid-gap: 0.7rem;
     grid-template-columns: repeat(3, 1fr);
@@ -386,6 +398,8 @@ main#home h1 {
 }
 
 #main-footer {
+    position: fixed;
+    bottom: 0%;
     display: inline-block;
     text-align: center;
     padding: 1rem;
@@ -396,7 +410,7 @@ main#home h1 {
 
 @media screen and (min-width: 1171px) {
     .projects {
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(5, 1fr);
     }
 }
 

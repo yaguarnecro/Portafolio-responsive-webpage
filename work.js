@@ -77,7 +77,6 @@ Vue.component('work-item', {
         </div>
 
     </main>
-    <footer id="main-footer">Copyright &copy; 2020</footer>
 `
 
 

@@ -21,9 +21,6 @@ Vue.component('contact-item', {
         </div>
     </div>
     </main>
-    <footer id="main-footer">Copyright &copy; 2020</footer>
-
-    <script src="js/main.js"></script>
     
 </div>
 `
