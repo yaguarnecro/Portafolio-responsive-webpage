@@ -180,7 +180,7 @@ body {
     scroll-snap-type: y mandatory;
 }
 
-section {
+section .item-sec #home #about #work #contact {
     border-bottom: none;
     height: 100vh;
     scroll-snap-align: start;
@@ -269,15 +269,21 @@ main#home h1 {
     margin-top: 20vh;
 }
 
-.about-info {
+.about {
     display: grid;
     grid-gap: 30px;
-    grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
+    grid-template-areas: 'heading heading heading' 'bioimage bio bio' 'job1 job2 job3';
+    grid-template-rows: 0.1fr 1fr 1.2fr;
     grid-template-columns: repeat(3, 1fr);
+    height: 100vh;
     color: #cde9bc;
 }
 
-.about-info .bio-image {
+.heading {
+    grid-area: heading;
+}
+
+.bio-image {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
@@ -285,37 +291,39 @@ main#home h1 {
     box-shadow: 25px 15px 30px rgba(0, 0, 0, 0.07);
 }
 
-.about-info .bio {
+.bio {
     grid-area: bio;
+    display: grid;
     font-size: 1.5rem;
     color: #cde9bc;
 }
 
-.about-info .job {
+.job {
+    height: 30vh;
     background: #120133;
-    padding: 5.0rem;
+    padding: 0.2rem;
     border-bottom: #073114 3px solid;
     border-radius: 45px;
 }
 
-.about-info .job-1 {
+.job-1 {
     grid-area: job1;
     padding: 0%;
 }
 
-.about-info .job-2 {
+.job-2 {
     grid-area: job2;
     padding: 0%;
 }
 
-.about-info .job-3 {
+.job-3 {
     grid-area: job3;
     padding: 0%;
 }
 
-.about-info .job .job-glass {
-    grid-area: auto;
+.job .job-glass {
     position: relative;
+    padding: 2rem;
     left: 1vw;
     top: 3vh;
     background: linear-gradient(115.19deg, #ffffff80 6.22%, rgba(241, 241, 241, 0.603) 30.07%, rgba(189, 189, 189, 0.089) 62.19%, rgba(194, 194, 194, 0.0556114) 80.59%, rgba(206, 206, 206, 0.0151279) 92.9%, rgba(195, 195, 195, 0) 92.9%, rgba(211, 211, 211, 0) 92.9%, rgba(196, 196, 196, 0) 92.9%);
@@ -324,7 +332,6 @@ main#home h1 {
     /* Note: backdrop-filter has minimal browser support */
     border-radius: 90px;
     border-bottom: none;
-    padding: grid;
 }
 
 
@@ -407,6 +414,7 @@ main#home h1 {
 }
 
 .boxes div {
+    display: inline-block;
     font-size: 2rem;
     border: 2.5px #fff solid;
     padding: 1.5rem 2.5rem;
@@ -506,12 +514,21 @@ main#home h1 {
         width: 150px;
         height: 150px;
     }
-    .about-info {
-        grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
-        grid-template-columns: 1fr;
+    .about {
+        display: grid;
+        grid-template-columns: 2fr;
+        grid-template-areas: 'heading bioimage' 'bio bio' 'job1 job1' 'job2 job2' 'job3 job3';
+        grid-template-rows: 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr;
+        height: 100vh;
+    }
+    .job {
+        height: 20vh;
+    }
+    .bio {
+        font-size: 16px;
     }
     .projects {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1fr;
     }
 }
 

@@ -2,15 +2,18 @@
 Vue.component('about-item', {
     template: `
 <div>
-<main id="about">
-<h1 class="lg-heading">
+<main class="about" id="about">
+<div class="heading">
+    <h1 class="lg-heading">
     About <span class="text-secondary"> Me</span>
-</h1>
-<h2 class="sm-heading">
+    </h1>
+    <h2 class="sm-heading">
     Dejame contarte un poco sobre mi.
-</h2>
-<div class="about-info">
+    </h2>
+</div>
+
     <img src="img/portrait.jpg" alt="Arturo Araque" class="bio-image">
+    
     <div class="bio">
         <h3 class="text-secondarry"><span class="text-secondary">Bio</span></h3>
         <p>Persona perseverante, apasionada por la tecnología, la constante adquisición de nuevos conocimientos y superación de sus propios límites, con conocimientos en programación orientada a objetos, frameworks como .Net y Angular, base de datos
