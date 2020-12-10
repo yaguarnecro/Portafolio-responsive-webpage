@@ -181,7 +181,7 @@ body {
 }
 
 section {
-    border-bottom: 10px #00ff4c solid;
+    border-bottom: none;
     height: 100vh;
     scroll-snap-align: start;
 }
@@ -327,11 +327,14 @@ main#home h1 {
     padding: grid;
 }
 
+
+/*  work projects */
+
 .projects {
     height: auto;
     display: grid;
     grid-gap: 0.7rem;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 3;
 }
 
 .projects img {
@@ -345,12 +348,62 @@ main#home h1 {
     transition: all 0.5s ease-out;
 }
 
-.boxes {
+
+/* carrusel css*/
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+#work>div {
+    height: 85%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
     align-items: center;
-    margin-top: 1rem;
+    height: 50%;
+}
+
+.swiper-slide img {
+    height: 60vh;
+    width: auto;
+    /*maintain aspect ratio*/
+    max-width: 60vh;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: none;
+    top: calc( 50% - 3px);
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    background: none;
+    color: #00ff4c;
+    opacity: 20%;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    opacity: 100%;
 }
 
 .boxes div {

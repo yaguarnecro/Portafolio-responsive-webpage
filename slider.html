@@ -1,14 +1,56 @@
-// Define a new component called todo-item
-Vue.component('work-item', {
-    template: ` 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="menu-btn">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+        </div>
+
+        <nav class="menu">
+            <div class="menu-branding">
+                <div class="portrait"></div>
+            </div>
+            <ul class="menu-nav">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About me</a>
+                </li>
+                <li class="nav-item current">
+                    <a href="work.html" class="nav-link">Mis trabajos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contacta me</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
     <div class="contenido-principal" id="work">
+
         <h1 class="lg-heading">
             Mis <span class="text-secondary">Trabajos y proyectos</span>
         </h1>
         <h2 class="sm-heading">
             Mira algunos de mis ultimos proyectos.
         </h2>
-
+        <!-- Swiper -->
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -71,20 +113,23 @@ Vue.component('work-item', {
                         </a>
                     </div>
                 </div>
+
             </div>
+            <!-- <button aria-label="Anterior" class="carrusel__anterior">
+                <i class="fas fa-chevron-right"></i>
+        </button> -->
+            <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
         </div>
 
-    </div>
 
-`
+        <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+        <script src="../package/swiper-bundle.min.js"></script>
 
+        <script src="carrusel.js"></script>
+</body>
 
-});
-
-var app = new Vue({
-    el: '#work',
-
-});
+</html>
