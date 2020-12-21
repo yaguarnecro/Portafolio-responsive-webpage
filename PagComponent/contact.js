@@ -20,6 +20,8 @@ Vue.component('contact-item', {
             <span class="text-secondary">Dirección: </span>Crr 89A 31-4 (Med-Ant-Col)
         </div>
     </div>
+
+
     </main>
     
 </div>

@@ -1,0 +1,30 @@
+{
+    "name": "Portafolio",
+    "version": "1.0.0",
+    "description": "It´s pretty simple, it is just a responsive website that will display images, links and descriptions.",
+    "main": "index.js",
+    "dependencies": {
+        "express": "^4.17.1",
+        "gh-pages": "^3.1.0",
+        "locomotive-scroll": "^4.0.6",
+        "node-sass": "^5.0.0"
+    },
+    "devDependencies": {
+        "parcel-bundler": "^1.12.4"
+    },
+    "scripts": {
+        "dev": "parcel index.html",
+        "prod": "parcel build index.html"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/yaguarnecro/portafolioresponsive.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/yaguarnecro/portafolioresponsive/issues"
+    },
+    "homepage": "https://github.com/yaguarnecro/portafolioresponsive#readme"
+}
