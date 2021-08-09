@@ -17,7 +17,7 @@ Vue.component('contact-item', {
             <span class="text-secondary">Teléfono: </span>(+57) 300 438 5827
         </div>
         <div>
-            <span class="text-secondary">Dirección: </span>Crr 89A 31-4 (Med-Ant-Col)
+            <span class="text-secondary">Dirección: </span>Medellín-Antioquía-Colombia
         </div>
     </div>
 
